@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		E60A85D81C3256D2007C464F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E60A85D71C3256D2007C464F /* main.m */; };
 		E60A85DB1C3256D2007C464F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E60A85DA1C3256D2007C464F /* AppDelegate.m */; };
-		E60A85DE1C3256D2007C464F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60A85DD1C3256D2007C464F /* ViewController.m */; };
+		E60A85DE1C3256D2007C464F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E60A85DD1C3256D2007C464F /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E60A85E11C3256D2007C464F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60A85DF1C3256D2007C464F /* Main.storyboard */; };
 		E60A85E31C3256D2007C464F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60A85E21C3256D2007C464F /* Assets.xcassets */; };
 		E60A85E61C3256D2007C464F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60A85E41C3256D2007C464F /* LaunchScreen.storyboard */; };
+		E6A502291C34D32C00FC599C /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A502281C34D32C00FC599C /* Test.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,10 @@
 		E60A85E21C3256D2007C464F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E60A85E51C3256D2007C464F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E60A85E71C3256D2007C464F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E63ED2881C9055330064A988 /* aa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aa.h; sourceTree = "<group>"; };
+		E63ED28B1C9055700064A988 /* bb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bb.h; sourceTree = "<group>"; };
+		E6A502271C34D32C00FC599C /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		E6A502281C34D32C00FC599C /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,10 @@
 				E60A85E41C3256D2007C464F /* LaunchScreen.storyboard */,
 				E60A85E71C3256D2007C464F /* Info.plist */,
 				E60A85D61C3256D2007C464F /* Supporting Files */,
+				E6A502271C34D32C00FC599C /* Test.h */,
+				E6A502281C34D32C00FC599C /* Test.m */,
+				E63ED2881C9055330064A988 /* aa.h */,
+				E63ED28B1C9055700064A988 /* bb.h */,
 			);
 			path = "Test通知";
 			sourceTree = "<group>";
@@ -150,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E60A85DE1C3256D2007C464F /* ViewController.m in Sources */,
+				E6A502291C34D32C00FC599C /* Test.m in Sources */,
 				E60A85DB1C3256D2007C464F /* AppDelegate.m in Sources */,
 				E60A85D81C3256D2007C464F /* main.m in Sources */,
 			);
@@ -265,7 +275,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Test通知/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "AnyDoorSDK.Test--";
+				PRODUCT_BUNDLE_IDENTIFIER = "bolu.Test--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -276,7 +286,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Test通知/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "AnyDoorSDK.Test--";
+				PRODUCT_BUNDLE_IDENTIFIER = "bolu.Test--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -300,6 +310,7 @@
 				E60A85EC1C3256D2007C464F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
